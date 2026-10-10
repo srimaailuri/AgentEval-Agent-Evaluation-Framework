@@ -1,0 +1,91 @@
+[
+  {
+    "case_id": "agent_001",
+    "system": "agentos",
+    "task": "Query blocked projects",
+    "expected_tools": [
+      "query_database"
+    ],
+    "expected_tool_arguments": {
+      "query_database": {
+        "status": "blocked"
+      }
+    }
+  },
+  {
+    "case_id": "agent_002",
+    "system": "agentos",
+    "task": "Search GitHub issues",
+    "expected_tools": [
+      "github_search"
+    ]
+  },
+  {
+    "case_id": "agent_003",
+    "system": "agentos",
+    "task": "RAG architecture lookup",
+    "expected_tools": [
+      "document_search"
+    ]
+  },
+  {
+    "case_id": "agent_004",
+    "system": "agentos",
+    "task": "Web + DB combo",
+    "expected_tools": [
+      "query_database",
+      "web_search"
+    ]
+  },
+  {
+    "case_id": "agent_005",
+    "system": "agentos",
+    "task": "MCP GitHub PR list",
+    "expected_tools": [
+      "github"
+    ]
+  },
+  {
+    "case_id": "agent_006",
+    "system": "agentos",
+    "task": "Single tool DB",
+    "expected_tools": [
+      "query_database"
+    ]
+  },
+  {
+    "case_id": "agent_007",
+    "system": "agentos",
+    "task": "Document + web",
+    "expected_tools": [
+      "document_search",
+      "web_search"
+    ]
+  },
+  {
+    "case_id": "agent_008",
+    "system": "agentos",
+    "task": "Postgres deploy stats",
+    "expected_tools": [
+      "query_database"
+    ]
+  },
+  {
+    "case_id": "agent_009",
+    "system": "agentos",
+    "task": "Recovery after failure",
+    "expected_tools": [
+      "query_database"
+    ]
+  },
+  {
+    "case_id": "agent_010",
+    "system": "agentos",
+    "task": "Multi-step agent task",
+    "expected_tools": [
+      "query_database",
+      "github_search",
+      "document_search"
+    ]
+  }
+]

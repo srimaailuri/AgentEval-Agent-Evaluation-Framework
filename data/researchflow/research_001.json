@@ -1,0 +1,7 @@
+{
+  "case_id": "research_001",
+  "system": "researchflow",
+  "question": "What are the major advantages of RAG?",
+  "expected_documents": ["rag_overview.pdf"],
+  "expected_answer": "RAG improves factual grounding by retrieving relevant external information."
+}

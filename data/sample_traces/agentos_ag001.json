@@ -1,0 +1,34 @@
+{
+  "AG001": {
+    "run_id": "00000000-0000-4000-8000-000000000001",
+    "session_id": "team-backend",
+    "status": "completed",
+    "trace": {
+      "trace_version": "1.0",
+      "run_id": "00000000-0000-4000-8000-000000000001",
+      "request_id": "e2e-demo",
+      "thread_id": "00000000-0000-4000-8000-000000000001",
+      "system": "agentos",
+      "input": {
+        "query": "Find blocked GitHub issues and compare them with deployment failures."
+      },
+      "tool_calls": [
+        {
+          "tool_name": "mcp.search_issues",
+          "result": {"success": true}
+        },
+        {
+          "tool_name": "query_database",
+          "result": {"success": true}
+        }
+      ],
+      "events": [
+        {"event_type": "tool_call_completed", "latency_ms": 500},
+        {"event_type": "tool_call_completed", "latency_ms": 40}
+      ],
+      "final_response": "Found blocked backend issues and compared deployment failure patterns from the database.",
+      "usage": {"tool_calls": 2, "latency_ms": 0, "estimated_cost": 0.01},
+      "status": "completed"
+    }
+  }
+}

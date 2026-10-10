@@ -1,0 +1,25 @@
+{
+  "RF001": {
+    "run_id": "rf-run-001",
+    "state": {
+      "run_id": "rf-run-001",
+      "question": "Explain retrieval-augmented generation.",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "source_type": "rag",
+          "document_id": "RAG.pdf",
+          "score": 0.92
+        }
+      ],
+      "final_report": {
+        "executive_summary": "RAG uses parametric memory in the generator and non-parametric retrieval to reduce hallucination and support knowledge updates.",
+        "key_findings": [
+          {"finding": "Retrieval augments generation with external documents."}
+        ],
+        "conclusion": "Non-parametric memory complements parametric weights."
+      },
+      "validation_status": "passed"
+    }
+  }
+}

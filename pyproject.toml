@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agenteval"
+version = "0.1.0"
+description = "Source-agnostic LLM and agent evaluation platform (traces, datasets, metrics)"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.0",
+    "pydantic-settings",
+    "python-dotenv",
+    "fastapi",
+    "uvicorn[standard]",
+    "sqlalchemy>=2.0",
+]
+
+[project.scripts]
+agenteval-api = "agenteval.api.app:main"
+agenteval = "agenteval.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "httpx",
+    "ruff",
+]
+postgres = [
+    "psycopg[binary]",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

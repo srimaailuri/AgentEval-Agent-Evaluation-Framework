@@ -1,0 +1,32 @@
+{
+  "dataset_id": "sample_agent",
+  "version": "1.0",
+  "description": "AgentOS-style multi-tool scenarios",
+  "cases": [
+    {
+      "id": "AG001",
+      "name": "GitHub and database comparison",
+      "input": {
+        "question": "Find blocked GitHub issues and compare them with deployment failures."
+      },
+      "expected": {
+        "tools": ["github", "postgresql"],
+        "topics": ["blocked issues", "deployment"],
+        "task_completed": true
+      },
+      "evaluation": {
+        "metrics": [
+          "tool_selection_accuracy",
+          "tool_success_rate",
+          "task_completion",
+          "topic_recall",
+          "latency_ms",
+          "estimated_cost"
+        ],
+        "thresholds": {
+          "latency_max_ms": 120000
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+services:
+  agenteval-api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8010:8010"
+    environment:
+      DATABASE_URL: sqlite:////data/agenteval.db
+      AGENTEVAL_DATA_DIR: /data
+    volumes:
+      - agenteval_data:/data
+
+volumes:
+  agenteval_data:

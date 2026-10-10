@@ -1,0 +1,22 @@
+{
+  "dataset_id": "sample_rag",
+  "version": "1.0",
+  "description": "ResearchFlow-style RAG benchmark case",
+  "cases": [
+    {
+      "id": "RF001",
+      "input": {
+        "question": "Explain retrieval-augmented generation."
+      },
+      "expected": {
+        "documents": ["RAG.pdf"],
+        "topics": ["parametric memory", "non-parametric memory", "hallucination"],
+        "answer": "RAG combines parametric memory with a non-parametric retrieval index to reduce hallucinations and ease knowledge updates."
+      },
+      "evaluation": {
+        "metrics": ["expected_document_recall", "recall_at_k", "mrr", "topic_recall", "answer_correctness"],
+        "k": 5
+      }
+    }
+  ]
+}

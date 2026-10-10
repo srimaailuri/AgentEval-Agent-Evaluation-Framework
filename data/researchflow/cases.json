@@ -1,0 +1,133 @@
+[
+  {
+    "case_id": "research_001",
+    "system": "researchflow",
+    "question": "What is RAG?",
+    "expected_documents": [
+      "RAG.pdf"
+    ],
+    "expected_topics": [
+      "retrieval",
+      "generation"
+    ],
+    "expected_answer": "Answer grounded in retrieved documents."
+  },
+  {
+    "case_id": "research_002",
+    "system": "researchflow",
+    "question": "Compare RAG-Sequence vs RAG-Token",
+    "expected_documents": [
+      "RAG.pdf"
+    ],
+    "expected_topics": [
+      "RAG-Sequence",
+      "RAG-Token"
+    ],
+    "expected_answer": "Answer grounded in retrieved documents."
+  },
+  {
+    "case_id": "research_003",
+    "system": "researchflow",
+    "question": "Pre-retrieval in RAG surveys",
+    "expected_documents": [
+      "RAG_with_LLM_survey.pdf"
+    ],
+    "expected_topics": [
+      "pre-retrieval",
+      "retrieval"
+    ],
+    "expected_answer": "Answer grounded in retrieved documents."
+  },
+  {
+    "case_id": "research_004",
+    "system": "researchflow",
+    "question": "Hallucination and external memory",
+    "expected_documents": [
+      "RAG.pdf"
+    ],
+    "expected_topics": [
+      "hallucination",
+      "memory"
+    ],
+    "expected_answer": "Answer grounded in retrieved documents."
+  },
+  {
+    "case_id": "research_005",
+    "system": "researchflow",
+    "question": "Vector search role",
+    "expected_documents": [
+      "RAG.pdf"
+    ],
+    "expected_topics": [
+      "embeddings",
+      "vector search"
+    ],
+    "expected_answer": "Answer grounded in retrieved documents."
+  },
+  {
+    "case_id": "research_006",
+    "system": "researchflow",
+    "question": "Multi-document synthesis",
+    "expected_documents": [
+      "RAG.pdf",
+      "RAG_with_LLM_survey.pdf"
+    ],
+    "expected_topics": [
+      "multi-document",
+      "synthesis"
+    ],
+    "expected_answer": "Answer grounded in retrieved documents."
+  },
+  {
+    "case_id": "research_007",
+    "system": "researchflow",
+    "question": "Citation grounding",
+    "expected_documents": [
+      "RAG.pdf"
+    ],
+    "expected_topics": [
+      "citation",
+      "grounding"
+    ],
+    "expected_answer": "Answer grounded in retrieved documents."
+  },
+  {
+    "case_id": "research_008",
+    "system": "researchflow",
+    "question": "Chunking strategies",
+    "expected_documents": [
+      "RAG_with_LLM_survey.pdf"
+    ],
+    "expected_topics": [
+      "chunking",
+      "retrieval"
+    ],
+    "expected_answer": "Answer grounded in retrieved documents."
+  },
+  {
+    "case_id": "research_009",
+    "system": "researchflow",
+    "question": "Evaluation of RAG systems",
+    "expected_documents": [
+      "RAG_with_LLM_survey.pdf"
+    ],
+    "expected_topics": [
+      "evaluation",
+      "metrics"
+    ],
+    "expected_answer": "Answer grounded in retrieved documents."
+  },
+  {
+    "case_id": "research_010",
+    "system": "researchflow",
+    "question": "Hybrid retrieval",
+    "expected_documents": [
+      "RAG.pdf"
+    ],
+    "expected_topics": [
+      "hybrid",
+      "retrieval"
+    ],
+    "expected_answer": "Answer grounded in retrieved documents."
+  }
+]

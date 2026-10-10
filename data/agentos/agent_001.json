@@ -1,0 +1,7 @@
+{
+  "case_id": "agent_001",
+  "system": "agentos",
+  "task": "Find blocked projects and summarize their recent issues.",
+  "expected_tools": ["query_database", "github_search"],
+  "expected_outcome": "Return blocked projects with related GitHub issues."
+}
